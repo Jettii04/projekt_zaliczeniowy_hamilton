@@ -2,6 +2,9 @@
 #include <map>
 #include <vector>
 #include <set>
+#include <string>
+#include <iostream>
+#include <fstream>
 
 struct edge {
 	int destinationNode = 0;
@@ -14,4 +17,5 @@ class Graph {
 	public:
 	void add_edge(int nodeOne, int nodeTwo, int weight);
 	void print();
+	void read_form_file(std::string fileName);
 };
